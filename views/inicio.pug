@@ -1,0 +1,33 @@
+extends ./layout/index
+
+block slider 
+    .slider 
+        h1 Rio de Janiero
+        em Aventura
+
+block contenido
+    main.container.mt-5 
+        h2.text-center.mb-5 Sobre Nosotros 
+        .row.mb-5
+            .col-md-6 
+                p En nuestra Agencia de Viajes, nuestra pasión es hacer que tus sueños de viaje se conviertan en experiencias inolvidables. Con años de experiencia en la industria del turismo, hemos perfeccionado el arte de la planificación de viajes excepcionales. Nuestro equipo está compuesto por amantes de los viajes que se dedican a diseñar itinerarios únicos y personalizados que te llevarán a explorar destinos emocionantes en todo el mundo.
+
+                p Nos enorgullece ofrecer un servicio excepcional, brindando atención a cada detalle para que puedas relajarte y disfrutar de cada momento de tu aventura. Desde escapadas románticas hasta emocionantes aventuras en la naturaleza, en nuestra Agencia de Viajes, estamos comprometidos a hacer que tus viajes sean inolvidables.
+            .col-md-6 
+                img(src="/img/inicio_nosotros.jpg", alt="inicio", class="img-fluid")
+        
+        include ./layout/bloque_viajes  
+
+    .descuento
+        .container  
+            .row    
+                .col-md-6 
+                    .contenido  
+                        h3 5% de Descuento 
+                        p.titulo Viaje a Canada 
+                        p.fecha 20 de Octubre de 2023 - 27 de Octubre de 2023
+                        p.precio $2,500 USD 
+    
+    .container 
+        h2.mt-5.text-center Testimoniales
+        include ./layout/bloque_testimoniales
